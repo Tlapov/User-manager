@@ -1,0 +1,11 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+.nav-btn{
+    margin-right: 0.7rem;
+}
+.logo{
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+}

@@ -1,27 +1,11 @@
-# UserCommand
+* login screen (polja za unos korisničkog imena i lozinke, te tipkom login) (1h)
+* naslovna stranica koja će imati izbornik i na stranici tablicu koja će se puniti s podacima koji su deklarirani u kodu (3h)
+* (dodatno) po kliku na pojedini redak u tablici, ili ne neku tipku kraj retka, ulazi se u pregled detalja (2h)
+* (dodatno) ažuriranje podatka korisnika (ime i prezime, broj telefona, e-mail) (1h)
+* (dodatno) dodavanja novog retka u tablicu (popup ili nova stranica slična detaljima) (1h)
+* (dodatno) brisanje retka u tablici (klikom na tipku X kraj retka, otvara se popup za potvrdu želite li obrisati (da/ne)) (1h)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ 
+-before up 
+Tema: Upravitelj korisnicima
+Aplikacija ima login screen, naslovnu stranicu s izbornikom i listu korisnika. Mogu se dodati novi korisnici, i mogu se obrisati korisnici. Kod inicijalnog startanja aplikacije, lista je napunjena s defaultnih 10 korisnika, s njima se može raditi (pregledati, ažurirati, obrisati). Tipka dodaj novog korisnika treba otvoriti prikaz (formu) za dodavanje novog korisnika.

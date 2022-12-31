@@ -1,0 +1,18 @@
+    <main class="addUser">
+      <h1>Add user </h1>
+      <form class="example-form" [formGroup] = "userForm">
+          <mat-form-field class="example-full-width">
+            <mat-label>User</mat-label>
+            <input formControlName="user" type="text" matInput placeholder="Add the user">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input formControlName="email" type="email" matInput placeholder="Add the user`s e-mail">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Mobile number</mat-label>
+            <input formControlName="mobile" type="tel" matInput placeholder="Add the user`s mobile number">
+          </mat-form-field>
+          <button class="addUser-btn" mat-flat-button color="primary" (click)="addUser()">Add user</button>
+      </form>
+    </main>  
