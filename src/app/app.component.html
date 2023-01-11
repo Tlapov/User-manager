@@ -1,10 +1,10 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <a class="logo" routerLink="/">User-manager app</a>
+      <a class="logo" routerLink="/users">User-manager app</a>
       <span class="example-spacer"></span>
-      <a mat-raised-button color="warn" class="nav-btn" routerLink="/">See users</a>
+      <a mat-raised-button color="warn" class="nav-btn" routerLink="/users">See users</a>
       <a mat-raised-button color="warn" class="nav-btn" routerLink="/addUser">Add user</a>
-      <a mat-raised-button color="warn" routerLink="/login">Login</a>
+      <a *ngIf="active" mat-raised-button color="warn" class="nav-btn" (click)="logout()">Logout</a>
     </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>

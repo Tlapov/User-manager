@@ -4,26 +4,29 @@
       "user": "Toni",
       "email": "toni.lapov@gmail.com",
       "mobile": "099/3222-1245",
-      "id": 1
+      "id": 1,
+      "isAdmin": true
     },
     {
       "user": "Emina",
       "email": "emina.lapov@gmail.com",
       "mobile": "099/826-7777",
-      "id": 2
+      "isAdmin": false
     },
     {
       "user": "Rajko",
       "email": "rajko@gmail.com",
       "mobile": "091/555-4422",
-      "id": 3
+      "id": 3,
+      "isAdmin": false
     }
   ],
   "comments": [
     {
       "id": 1,
       "body": "some comment",
-      "postId": 1
+      "postId": 1,
+      "isAdmin": false
     }
   ],
   "profile": {

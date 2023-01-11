@@ -1,0 +1,3 @@
+Verzija node.js mora biti 16 +
+Pokretanje baze podataka : npx json-server --watch db.json
+Pokretanje aplikacije: ng serve / npm start

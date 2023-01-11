@@ -18,11 +18,12 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { AuthGuard } from './guards/auth.guard';
 
 const appRoute: Routes = [
-  {path: "", component: HomeComponent},
-  {path: "login", component: LoginComponent},
-  {path: "addUser", component: AddUserComponent}
+  {path: "", component: LoginComponent},
+  {path: "users", component: HomeComponent, canActivate: [AuthGuard]},
+  {path: "addUser", component: AddUserComponent, canActivate: [AuthGuard]}
 
 ]
 
@@ -54,5 +55,4 @@ const appRoute: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule {   
- 
 }

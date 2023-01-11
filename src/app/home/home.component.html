@@ -1,18 +1,18 @@
 <main class="home-section">
     <mat-table [dataSource]="dataSource" class="table">
-        <!-- User name Definition -->
+       
         <ng-container matColumnDef="user">
           <mat-header-cell *matHeaderCellDef> User name </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.user}} </mat-cell>
         </ng-container>
       
-        <!-- Age Definition -->
+        
         <ng-container matColumnDef="email">
           <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.email}} </mat-cell>
         </ng-container>
       
-        <!-- Title Definition -->
+       
         <ng-container matColumnDef="mobile">
           <mat-header-cell *matHeaderCellDef>Mobile</mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.mobile}} </mat-cell>

@@ -1,13 +1,13 @@
 <main class="login">
     <h3>Prijavite se...</h3>
-    <form >
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div>
-            <label for="username">Unesite svoje ime</label>
-            <input type="text" id="username">
+            <label for="username">Unesite svoj email</label>
+            <input type="email" id="username" formControlName="email">
         </div>
         <div>
-            <label for="password">Unesite svoje ime</label>
-            <input type="text" id="password">
+            <label for="password">Unesite svoju lozinku</label>
+            <input type="password" id="password" formControlName="password">
         </div>
         <button>Prijavi se</button>
     </form>
